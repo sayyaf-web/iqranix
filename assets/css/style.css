@@ -1,1 +1,152 @@
+/*=========================================
+IQRANIX PREMIUM HERO
+=========================================*/
 
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:280px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin:24px 0;
+
+    background:#0f5132;
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,.22);
+
+}
+
+.heroBackground{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    transform:scale(1.03);
+
+    z-index:1;
+
+}
+
+.heroOverlay{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    height:100%;
+
+    padding:24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(8,28,21,.72),
+        rgba(8,28,21,.55)
+    );
+
+    backdrop-filter:blur(2px);
+
+}
+
+.heroLeft{
+
+    width:55%;
+
+}
+
+.heroBadge{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.14);
+
+    color:#FFD369;
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+}
+
+.heroLeft h1{
+
+    margin:18px 0 6px;
+
+    color:#fff;
+
+    font-size:3rem;
+
+    font-weight:800;
+
+}
+
+.heroLeft h2{
+
+    color:#FFD369;
+
+    font-size:2.2rem;
+
+    margin-bottom:8px;
+
+}
+
+.heroLeft p{
+
+    color:#ffffff;
+
+    opacity:.9;
+
+    margin-bottom:24px;
+
+}
+
+.heroButton{
+
+    background:#FFD369;
+
+    color:#103d2b;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:14px 26px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.heroButton:hover{
+
+    transform:translateY(-2px);
+
+}
