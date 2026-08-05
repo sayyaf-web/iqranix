@@ -227,12 +227,18 @@ justify-content:center;
 
 }
 .heroBackground{
-position:absolute;
-inset:0;
-background:#0B8457;
-background-size:cover;
-background-position:center;
-z-index:0;
+    position:absolute;
+    inset:0;
+
+    background-image:url("../images/hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    transform:scale(1.05);
 }
 
 .heroOverlay{
