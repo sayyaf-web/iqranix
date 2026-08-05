@@ -206,7 +206,17 @@ color:white;
     margin-bottom:10px;
 
 }
+.heroLeft p{
 
+    color:white;
+
+    opacity:.9;
+
+    font-size:18px;
+
+    margin-top:8px;
+
+}
 .heroButton{
 
 margin-top:18px;
