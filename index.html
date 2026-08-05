@@ -72,54 +72,99 @@
     </header>
 
     <!-- Prayer Hero -->
-    <section class="hero">
+<section class="hero">
 
-        <div class="heroOverlay">
+    <div class="heroBackground"></div>
 
-            <div class="heroLeft">
+    <div class="heroOverlay">
 
-                <p class="nextPrayerLabel">
-                    Next Prayer
-                </p>
+        <div class="heroLeft">
 
-                <h1 id="nextPrayer">
-                    Maghrib
-                </h1>
+            <span class="heroBadge">
 
-                <h2 id="countdown">
-                    00:00:00
-                </h2>
+                🕌 Next Prayer
 
-                <p id="remainingText">
-                    Remaining
-                </p>
+            </span>
 
-                <button class="heroButton">
+            <h1 id="nextPrayer">
 
-                    View Prayer Times
+                Fajr
 
-                </button>
+            </h1>
 
-            </div>
+            <h2 id="countdown">
 
-            <div class="heroRight">
+                00:00:00
 
-                <h3 id="hijriDate">
+            </h2>
 
-                    Hijri Date
+            <p id="remainingText">
 
-                </h3>
+                3h 45m Remaining
 
-                <div id="todayPrayerList">
+            </p>
+
+            <button class="heroButton">
+
+                View Prayer Times
+
+            </button>
+
+        </div>
+
+        <div class="heroRight">
+
+            <div class="prayerRing">
+
+                <svg viewBox="0 0 240 240">
+
+                    <circle
+                        class="ringTrack"
+                        cx="120"
+                        cy="120"
+                        r="100"/>
+
+                    <circle
+                        class="ringProgress"
+                        cx="120"
+                        cy="120"
+                        r="100"/>
+
+                </svg>
+
+                <div class="ringCenter">
+
+                    <span id="ringPercent">
+
+                        0%
+
+                    </span>
 
                 </div>
 
             </div>
 
+            <div class="heroInfo">
+
+                <h3 id="hijriDate">
+
+                    12 Muharram 1448 AH
+
+                </h3>
+
+                <p id="location">
+
+                    Detecting Location...
+
+                </p>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
 
+</section>
     <!-- Feature Grid -->
     <section class="featureGrid">
 
