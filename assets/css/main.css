@@ -219,21 +219,30 @@ color:white;
 }
 .heroButton{
 
-margin-top:18px;
+    margin-top:22px;
 
-padding:12px 20px;
+    width:220px;
 
-border:none;
+    padding:15px 20px;
 
-border-radius:30px;
+    border:none;
 
-background:white;
+    border-radius:40px;
 
-color:var(--primary);
+    background:#FFD369;
 
-font-weight:600;
+    color:#0B5137;
 
-cursor:pointer;
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    box-shadow:
+    0 10px 25px rgba(255,211,105,.35);
 
 }
 
