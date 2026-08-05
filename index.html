@@ -1,362 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Iqranix</title>
-
-<meta name="theme-color" content="#0B8457">
-
-<link rel="manifest" href="manifest.json">
-
-<link rel="stylesheet" href="assets/css/variables.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/dashboard.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
-
-</head>
-
-<body>
-
-<main id="dashboard">
-
-<!-- =========================
-HEADER
-========================= -->
-
-<header class="topHeader">
-
-<button class="menuBtn">☰</button>
-
-<div class="greetingSection">
-
-<h2 id="greeting">
-Assalamu Alaikum
-</h2>
-
-<p id="greetingMessage">
-Your Daily Islamic Companion
-</p>
-
-</div>
-
-<div class="headerRight">
-
-<div class="locationBox">
-
-<span>📍</span>
-
-<span id="currentLocation">
-Detecting...
-</span>
-
-</div>
-
-<button class="notificationBtn">
-🔔
-</button>
-
-</div>
-
-</header>
-
-<!-- =========================
-PREMIUM HERO
-========================= -->
-
 <section class="hero">
 
-<div class="heroBackground"></div>
+    <div class="heroBackground"></div>
 
-<div class="heroOverlay">
+    <div class="heroOverlay">
 
-<!-- LEFT SIDE -->
+        <!-- LEFT -->
 
-<div class="heroLeft">
+        <div class="heroLeft">
 
-<span class="heroBadge">
+            <span class="heroBadge">
 
-🕌 Next Prayer
+                🕌 Next Prayer
 
-</span>
+            </span>
 
-<h1 id="nextPrayer">
+            <h1 id="nextPrayer">
 
-Fajr
+                Maghrib
 
-</h1>
+            </h1>
 
-<h2 id="countdown">
+            <h2 id="countdown">
 
-00:00:00
+                01:42:15
 
-</h2>
+            </h2>
 
-<p id="remainingText">
+            <p id="remainingText">
 
-3h 45m Remaining
+                Remaining until Maghrib
 
-</p>
+            </p>
 
-<button
-class="heroButton"
-id="viewPrayerBtn">
+            <button id="viewPrayerBtn" class="heroButton">
 
-View Prayer Times
+                View Prayer Times
 
-</button>
+            </button>
 
-</div>
+        </div>
 
-<!-- RIGHT SIDE -->
+        <!-- RIGHT -->
 
-<div class="heroRight">
+        <div class="heroRight">
 
-<div class="prayerPanel">
+            <div class="prayerPanel">
 
-<div class="panelHeader">
+                <div class="panelHeader">
 
-<div>
+                    <div>
 
-<h3 id="hijriDate">
+                        <h3 id="hijriDate">
 
-12 Muharram 1448 AH
+                            12 Muharram 1448 AH
 
-</h3>
+                        </h3>
 
-<p id="heroLocation">
+                        <p id="heroLocation">
 
-Detecting Location...
+                            Nairobi, Kenya
 
-</p>
+                        </p>
 
-</div>
+                    </div>
 
-<button class="calendarBtn">
+                    <button class="calendarBtn">
 
-📅
+                        📅
 
-</button>
+                    </button>
 
-</div>
+                </div>
 
-<div class="prayerList">
+                <div class="prayerList">
 
-<div class="prayerItem">
+                    <div class="prayerItem">
 
-<span>🌅 Fajr</span>
+                        <span>🌅 Fajr</span>
 
-<span id="fajrTime">--:--</span>
+                        <span id="fajrTime">05:08</span>
 
-</div>
+                    </div>
 
-<div class="prayerItem">
+                    <div class="prayerItem">
 
-<span>🌄 Sunrise</span>
+                        <span>🌄 Sunrise</span>
 
-<span id="sunriseTime">--:--</span>
+                        <span id="sunriseTime">06:27</span>
 
-</div>
+                    </div>
 
-<div class="prayerItem">
+                    <div class="prayerItem">
 
-<span>☀ Dhuhr</span>
+                        <span>☀ Dhuhr</span>
 
-<span id="dhuhrTime">--:--</span>
+                        <span id="dhuhrTime">12:32</span>
 
-</div>
+                    </div>
 
-<div class="prayerItem">
+                    <div class="prayerItem">
 
-<span>🌇 Asr</span>
+                        <span>🌇 Asr</span>
 
-<span id="asrTime">--:--</span>
+                        <span id="asrTime">15:48</span>
 
-</div>
+                    </div>
 
-<div class="prayerItem activePrayer">
+                    <div class="prayerItem activePrayer">
 
-<span>🌆 Maghrib</span>
+                        <span>🌆 Maghrib</span>
 
-<span id="maghribTime">--:--</span>
+                        <span id="maghribTime">18:42</span>
 
-</div>
+                    </div>
 
-<div class="prayerItem">
+                    <div class="prayerItem">
 
-<span>🌙 Isha</span>
+                        <span>🌙 Isha</span>
 
-<span id="ishaTime">--:--</span>
+                        <span id="ishaTime">20:01</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
-
-</div>
-
-</section><!-- =========================
-PREMIUM FEATURE GRID
-========================= -->
-
-<section class="featureGrid">
-
-    <div class="featureCard green">
-
-        <div class="featureIcon">📖</div>
-
-        <h3>Holy Quran</h3>
-
-        <p>Read, listen & bookmark</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard blue">
-
-        <div class="featureIcon">🕌</div>
-
-        <h3>Prayer Times</h3>
-
-        <p>Accurate daily Salah</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard purple">
-
-        <div class="featureIcon">🧭</div>
-
-        <h3>Qibla Compass</h3>
-
-        <p>Find the direction of Makkah</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard gold">
-
-        <div class="featureIcon">📿</div>
-
-        <h3>Digital Tasbih</h3>
-
-        <p>Count your daily Dhikr</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard emerald">
-
-        <div class="featureIcon">🤲</div>
-
-        <h3>Duas</h3>
-
-        <p>Morning, evening & daily supplications</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard orange">
-
-        <div class="featureIcon">☀</div>
-
-        <h3>Daily Ayah</h3>
-
-        <p>Reflect on a new verse every day</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard cyan">
-
-        <div class="featureIcon">📚</div>
-
-        <h3>Hadith</h3>
-
-        <p>Authentic collections of Hadith</p>
-
-        <button class="cardArrow">→</button>
-
-    </div>
-
-    <div class="featureCard pink">
-
-        <div class="featureIcon">📅</div>
-
-        <h3>Hijri Calendar</h3>
-
-        <p>Islamic dates and events</p>
-
-        <button class="cardArrow">→</button>
+        </div>
 
     </div>
 
 </section>
+<section class="featureGrid">
 
-<!-- =========================
-BOTTOM NAVIGATION
-========================= -->
+    <div class="featureCard green">
+        <div class="featureIcon">📖</div>
+        <h3>Holy Quran</h3>
+        <p>Read, listen & bookmark.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-<nav class="bottomNav">
+    <div class="featureCard blue">
+        <div class="featureIcon">🕌</div>
+        <h3>Prayer Times</h3>
+        <p>Daily Salah schedule.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-    <button class="navItem active">
+    <div class="featureCard purple">
+        <div class="featureIcon">🧭</div>
+        <h3>Qibla</h3>
+        <p>Find Qibla instantly.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-        <span class="navIcon">🏠</span>
+    <div class="featureCard gold">
+        <div class="featureIcon">📿</div>
+        <h3>Tasbih</h3>
+        <p>Digital Dhikr counter.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-        <span class="navLabel">Home</span>
+    <div class="featureCard emerald">
+        <div class="featureIcon">🤲</div>
+        <h3>Duas</h3>
+        <p>Daily supplications.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-    </button>
+    <div class="featureCard orange">
+        <div class="featureIcon">☀️</div>
+        <h3>Daily Ayah</h3>
+        <p>Reflect every day.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-    <button class="navItem">
+    <div class="featureCard cyan">
+        <div class="featureIcon">📚</div>
+        <h3>Hadith</h3>
+        <p>Authentic collections.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-        <span class="navIcon">📖</span>
+    <div class="featureCard pink">
+        <div class="featureIcon">📅</div>
+        <h3>Hijri Calendar</h3>
+        <p>Islamic dates & events.</p>
+        <span class="featureArrow">→</span>
+    </div>
 
-        <span class="navLabel">Quran</span>
-
-    </button>
-
-    <button class="navItem">
-
-        <span class="navIcon">🕌</span>
-
-        <span class="navLabel">Prayer</span>
-
-    </button>
-
-    <button class="navItem">
-
-        <span class="navIcon">🧭</span>
-
-        <span class="navLabel">Qibla</span>
-
-    </button>
-
-    <button class="navItem">
-
-        <span class="navIcon">⚙</span>
-
-        <span class="navLabel">Settings</span>
-
-    </button>
-
-</nav>
-
-</main>
-
-<script type="module" src="assets/js/app.js"></script>
-<script src="assets/js/dashboard.js"></script>
-
-</body>
-</html>
+</section>
