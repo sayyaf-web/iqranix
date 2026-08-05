@@ -3,21 +3,21 @@
 =========================================*/
 
 :root{
-
---heroRadius:30px;
-
+    --heroRadius:30px;
 }
 
 /*=========================================
  DASHBOARD
 =========================================*/
 
+body{
+    background:var(--background);
+    min-height:100vh;
+}
+
 #dashboard{
-
-padding:20px;
-
-padding-bottom:120px;
-
+    padding:20px;
+    padding-bottom:120px;
 }
 
 /*=========================================
@@ -25,614 +25,521 @@ padding-bottom:120px;
 =========================================*/
 
 .topHeader{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-gap:16px;
-
-margin-bottom:24px;
-
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:22px;
 }
 
 .menuBtn{
-
-width:50px;
-
-height:50px;
-
-border:none;
-
-border-radius:50%;
-
-background:#ffffff;
-
-font-size:22px;
-
-cursor:pointer;
-
-box-shadow:0 8px 18px rgba(0,0,0,.08);
-
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .greetingSection{
-
-flex:1;
-
-margin-left:18px;
-
+    flex:1;
+    margin-left:16px;
 }
 
 .greetingSection h2{
-
-font-size:24px;
-
-font-weight:700;
-
-color:#0B8457;
-
-margin:0;
-
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+    color:#0B8457;
 }
 
 .greetingSection p{
-
-margin-top:4px;
-
-font-size:14px;
-
-color:#7d7d7d;
-
+    margin-top:4px;
+    color:#777;
+    font-size:14px;
 }
 
 .headerRight{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 .locationBox{
-
-display:flex;
-
-align-items:center;
-
-gap:8px;
-
-padding:10px 16px;
-
-background:#ffffff;
-
-border-radius:30px;
-
-font-size:13px;
-
-box-shadow:0 8px 18px rgba(0,0,0,.08);
-
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 16px;
+    background:#fff;
+    border-radius:30px;
+    font-size:13px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .notificationBtn{
-
-width:48px;
-
-height:48px;
-
-border:none;
-
-border-radius:50%;
-
-background:#ffffff;
-
-font-size:20px;
-
-cursor:pointer;
-
-box-shadow:0 8px 18px rgba(0,0,0,.08);
-
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 /*=========================================
- HERO
+ PREMIUM HERO
 =========================================*/
 
 .hero{
-
-position:relative;
-
-height:330px;
-
-border-radius:var(--heroRadius);
-
-overflow:hidden;
-
-margin-bottom:30px;
-
-box-shadow:0 20px 45px rgba(0,0,0,.28);
-
+    position:relative;
+    height:280px;
+    overflow:hidden;
+    border-radius:30px;
+    margin-bottom:28px;
+    box-shadow:0 18px 40px rgba(0,0,0,.25);
 }
 
 .heroBackground{
-
-position:absolute;
-
-inset:0;
-
-background-image:url("../images/hero-bg.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
-
-transform:scale(1.05);
-
+    position:absolute;
+    inset:0;
+    background:url("../images/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    transform:scale(1.05);
 }
 
 .heroOverlay{
-
-position:absolute;
-
-inset:0;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:28px;
-
-background:
-
-linear-gradient(
-
-rgba(7,28,21,.72),
-
-rgba(7,28,21,.42)
-
-);
-
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px;
+    background:linear-gradient(
+        rgba(8,28,21,.72),
+        rgba(8,28,21,.42)
+    );
 }
 
+/*=========================================
+ HERO LEFT
+=========================================*/
+
 .heroLeft{
-
-width:52%;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-color:white;
-
+    width:48%;
+    color:#fff;
 }
 
 .heroBadge{
-
-display:inline-flex;
-
-align-items:center;
-
-width:max-content;
-
-padding:10px 18px;
-
-border-radius:40px;
-
-background:rgba(255,255,255,.14);
-
-backdrop-filter:blur(12px);
-
-color:#FFD369;
-
-font-size:14px;
-
-font-weight:700;
-
-margin-bottom:20px;
-
+    display:inline-flex;
+    align-items:center;
+    padding:10px 18px;
+    border-radius:40px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    color:#FFD369;
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:18px;
 }
 
 .heroLeft h1{
-
-font-size:52px;
-
-font-weight:800;
-
-margin:0 0 8px;
-
+    margin:0;
+    font-size:46px;
+    font-weight:800;
 }
 
 .heroLeft h2{
-
-font-size:40px;
-
-font-weight:700;
-
-color:#FFD369;
-
-margin:0 0 12px;
-
+    margin:10px 0;
+    font-size:34px;
+    font-weight:700;
+    color:#FFD369;
 }
 
 .heroLeft p{
-
-font-size:17px;
-
-color:rgba(255,255,255,.90);
-
-margin-bottom:24px;
-
+    font-size:15px;
+    color:rgba(255,255,255,.92);
+    margin-bottom:18px;
 }
 
 .heroButton{
-
-width:220px;
-
-padding:15px;
-
-border:none;
-
-border-radius:40px;
-
-background:#FFD369;
-
-color:#0B5137;
-
-font-size:16px;
-
-font-weight:700;
-
-cursor:pointer;
-
-transition:.3s;
-
-box-shadow:0 10px 24px rgba(255,211,105,.35);
-
+    border:none;
+    border-radius:40px;
+    padding:14px 24px;
+    background:#FFD369;
+    color:#0B5137;
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .heroButton:hover{
+    transform:translateY(-3px);
+}
 
-transform:translateY(-3px);
-
-}/*=========================================
- PREMIUM PRAYER PANEL
+/*=========================================
+ HERO RIGHT
 =========================================*/
 
 .heroRight{
-
-width:40%;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
+    width:46%;
+    display:flex;
+    justify-content:flex-end;
 }
+/*=========================================
+ PREMIUM PRAYER PANEL
+=========================================*/
 
 .prayerPanel{
 
-width:100%;
+    width:100%;
 
-padding:18px;
+    background:rgba(8,28,21,.82);
 
-border-radius:24px;
+    backdrop-filter:blur(18px);
 
-background:rgba(8,28,21,.82);
+    border:1px solid rgba(255,255,255,.10);
 
-backdrop-filter:blur(18px);
+    border-radius:22px;
 
-border:1px solid rgba(255,255,255,.12);
+    padding:14px;
 
-box-shadow:0 15px 40px rgba(0,0,0,.35);
+    box-shadow:0 15px 35px rgba(0,0,0,.30);
 
 }
 
 .panelHeader{
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-margin-bottom:18px;
+    margin-bottom:12px;
 
 }
 
 .panelHeader h3{
 
-margin:0;
+    margin:0;
 
-font-size:18px;
+    color:#FFD369;
 
-font-weight:700;
+    font-size:17px;
 
-color:#FFD369;
+    font-weight:700;
 
 }
 
 .panelHeader p{
 
-margin-top:4px;
+    margin-top:4px;
 
-font-size:13px;
+    font-size:12px;
 
-color:rgba(255,255,255,.80);
+    color:rgba(255,255,255,.75);
 
 }
 
 .calendarBtn{
 
-width:46px;
+    width:42px;
 
-height:46px;
+    height:42px;
 
-border:none;
+    border:none;
 
-border-radius:50%;
+    border-radius:50%;
 
-background:rgba(255,211,105,.15);
+    background:rgba(255,211,105,.15);
 
-color:#FFD369;
+    color:#FFD369;
 
-font-size:20px;
+    font-size:18px;
 
-cursor:pointer;
+    cursor:pointer;
 
-transition:.3s;
+    transition:.3s;
 
 }
 
 .calendarBtn:hover{
 
-transform:scale(1.08);
+    background:rgba(255,211,105,.28);
 
-background:rgba(255,211,105,.25);
+    transform:scale(1.05);
 
 }
 
 .prayerList{
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-gap:10px;
+    gap:6px;
 
 }
 
 .prayerItem{
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:12px 16px;
+    padding:8px 12px;
 
-border-radius:14px;
+    border-radius:12px;
 
-background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,.05);
 
-color:#ffffff;
+    color:#ffffff;
 
-transition:.3s;
+    font-size:14px;
+
+    transition:.25s;
 
 }
 
 .prayerItem:hover{
 
-background:rgba(255,255,255,.10);
+    background:rgba(255,255,255,.10);
 
 }
 
 .prayerItem span:first-child{
 
-font-weight:600;
+    font-weight:600;
 
 }
 
 .prayerItem span:last-child{
 
-font-weight:700;
+    color:#FFD369;
 
-color:#FFD369;
+    font-weight:700;
 
 }
 
 .activePrayer{
 
-background:linear-gradient(
+    background:linear-gradient(
 
-90deg,
+        90deg,
 
-rgba(255,211,105,.22),
+        rgba(255,211,105,.28),
 
-rgba(255,211,105,.08)
+        rgba(255,211,105,.10)
 
-);
+    );
 
-border:1px solid rgba(255,211,105,.35);
+    border:1px solid rgba(255,211,105,.35);
 
-box-shadow:0 0 18px rgba(255,211,105,.15);
+    box-shadow:0 0 15px rgba(255,211,105,.15);
 
 }/*=========================================
-PREMIUM FEATURE GRID
+ PREMIUM FEATURE GRID
 =========================================*/
 
 .featureGrid{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
 
-gap:18px;
+    gap:18px;
 
-margin-top:30px;
+    margin-top:30px;
 
 }
 
 .featureCard{
 
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    overflow:hidden;
 
-padding:22px;
+    border-radius:28px;
 
-border-radius:24px;
+    padding:22px;
 
-min-height:170px;
+    min-height:170px;
 
-color:#fff;
+    color:#fff;
 
-box-shadow:0 15px 35px rgba(0,0,0,.18);
+    cursor:pointer;
 
-transition:.35s;
+    transition:.35s;
+
+    box-shadow:0 14px 35px rgba(0,0,0,.18);
 
 }
 
 .featureCard:hover{
 
-transform:translateY(-6px);
+    transform:translateY(-8px);
 
 }
 
-.featureCard::after{
+.featureCard::before{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-right:-40px;
+    width:140px;
 
-top:-40px;
+    height:140px;
 
-width:130px;
+    right:-45px;
 
-height:130px;
+    top:-45px;
 
-border-radius:50%;
+    border-radius:50%;
 
-background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.12);
 
 }
 
 .featureIcon{
 
-font-size:42px;
+    font-size:42px;
 
-margin-bottom:20px;
+    margin-bottom:18px;
+
+    position:relative;
+
+    z-index:2;
 
 }
 
 .featureCard h3{
 
-font-size:20px;
+    font-size:20px;
 
-font-weight:700;
+    font-weight:700;
 
-margin-bottom:8px;
+    margin-bottom:8px;
 
-color:#fff;
+    position:relative;
+
+    z-index:2;
 
 }
 
 .featureCard p{
 
-font-size:14px;
+    font-size:14px;
 
-color:rgba(255,255,255,.90);
+    line-height:1.5;
+
+    opacity:.92;
+
+    position:relative;
+
+    z-index:2;
 
 }
 
 .featureArrow{
 
-position:absolute;
+    position:absolute;
 
-right:20px;
+    right:18px;
 
-bottom:20px;
+    bottom:18px;
 
-width:42px;
+    width:42px;
 
-height:42px;
+    height:42px;
 
-border-radius:50%;
+    border-radius:50%;
 
-background:rgba(255,255,255,.18);
+    display:flex;
 
-display:flex;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-justify-content:center;
+    background:rgba(255,255,255,.18);
 
-font-size:20px;
+    font-size:20px;
+
+    font-weight:700;
 
 }
 
-/* Card Colours */
+/*=========================================
+ CARD COLOURS
+=========================================*/
 
 .green{
 
-background:linear-gradient(135deg,#0E9F6E,#047857);
+    background:linear-gradient(135deg,#00B894,#00896A);
 
 }
 
 .blue{
 
-background:linear-gradient(135deg,#2563EB,#1D4ED8);
+    background:linear-gradient(135deg,#4A8CFF,#2563EB);
 
 }
 
 .purple{
 
-background:linear-gradient(135deg,#7C3AED,#5B21B6);
-
-}
-
-.orange{
-
-background:linear-gradient(135deg,#EA580C,#C2410C);
+    background:linear-gradient(135deg,#8E44AD,#6C2BD9);
 
 }
 
 .gold{
 
-background:linear-gradient(135deg,#D4A017,#B8860B);
+    background:linear-gradient(135deg,#FFD369,#E0A800);
+
+    color:#222;
+
+}
+
+.gold h3{
+
+    color:#222;
+
+}
+
+.gold p{
+
+    color:#333;
+
+}
+
+.orange{
+
+    background:linear-gradient(135deg,#FF914D,#F97316);
 
 }
 
 .emerald{
 
-background:linear-gradient(135deg,#059669,#065F46);
+    background:linear-gradient(135deg,#10B981,#047857);
 
 }
 
 .cyan{
 
-background:linear-gradient(135deg,#0891B2,#0E7490);
+    background:linear-gradient(135deg,#22D3EE,#0891B2);
 
 }
 
 .pink{
 
-background:linear-gradient(135deg,#DB2777,#BE185D);
+    background:linear-gradient(135deg,#EC4899,#DB2777);
 
-}
 }/*=========================================
  PREMIUM FLOATING BOTTOM NAVIGATION
 =========================================*/
@@ -659,14 +566,13 @@ background:linear-gradient(135deg,#DB2777,#BE185D);
 
     align-items:center;
 
-    box-shadow:
-        0 18px 45px rgba(0,0,0,.16);
+    box-shadow:0 18px 45px rgba(0,0,0,.16);
 
     z-index:999;
 
 }
 
-.navItem{
+.bottomNav button{
 
     flex:1;
 
@@ -688,29 +594,11 @@ background:linear-gradient(135deg,#DB2777,#BE185D);
 
     transition:.35s;
 
-}
-
-.navIcon{
-
-    width:46px;
-
-    height:46px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border-radius:50%;
-
-    font-size:24px;
-
-    transition:.35s;
+    color:#777;
 
 }
 
-.navLabel{
+.bottomNav button span{
 
     margin-top:6px;
 
@@ -718,19 +606,51 @@ background:linear-gradient(135deg,#DB2777,#BE185D);
 
     font-weight:600;
 
-    color:#666;
+}
 
-    transition:.35s;
+.bottomNav button:hover{
+
+    color:#0B8457;
 
 }
 
-.navItem:hover .navIcon{
+.bottomNav button:hover::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
 
     background:#EEF9F5;
 
+    z-index:-1;
+
 }
 
-.navItem.active .navIcon{
+.bottomNav button.active{
+
+    color:#0B8457;
+
+    font-weight:700;
+
+}
+
+.bottomNav button.active::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
 
     background:linear-gradient(
         135deg,
@@ -738,18 +658,9 @@ background:linear-gradient(135deg,#DB2777,#BE185D);
         #F4B400
     );
 
-    color:#0B5137;
+    box-shadow:0 10px 25px rgba(255,211,105,.45);
 
-    box-shadow:
-        0 8px 24px rgba(255,211,105,.45);
-
-}
-
-.navItem.active .navLabel{
-
-    color:#0B8457;
-
-    font-weight:700;
+    z-index:-1;
 
 }
 
@@ -761,37 +672,37 @@ background:linear-gradient(135deg,#DB2777,#BE185D);
 
 .hero{
 
-height:auto;
+    height:auto;
 
-min-height:620px;
+    min-height:520px;
 
 }
 
 .heroOverlay{
 
-flex-direction:column;
+    flex-direction:column;
 
-align-items:flex-start;
+    align-items:flex-start;
 
-gap:24px;
+    gap:22px;
 
 }
 
 .heroLeft{
 
-width:100%;
+    width:100%;
 
 }
 
 .heroRight{
 
-width:100%;
+    width:100%;
 
 }
 
 .featureGrid{
 
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 
 }
 
@@ -801,43 +712,71 @@ grid-template-columns:1fr;
 
 #dashboard{
 
-padding:16px;
+    padding:16px;
 
-padding-bottom:120px;
+    padding-bottom:120px;
+
+}
+
+.hero{
+
+    min-height:500px;
 
 }
 
 .heroLeft h1{
 
-font-size:40px;
+    font-size:40px;
 
 }
 
 .heroLeft h2{
 
-font-size:30px;
+    font-size:30px;
 
 }
 
 .heroButton{
 
-width:100%;
+    width:100%;
 
 }
 
 .prayerPanel{
 
-padding:16px;
+    padding:12px;
+
+}
+
+.prayerItem{
+
+    padding:8px 10px;
+
+    font-size:13px;
 
 }
 
 .bottomNav{
 
-left:10px;
+    left:10px;
 
-right:10px;
+    right:10px;
 
-height:78px;
+    bottom:12px;
+
+    height:76px;
+
+}
+
+.bottomNav button{
+
+    font-size:20px;
+
+}
+
+.bottomNav button span{
+
+    font-size:11px;
 
 }
 
