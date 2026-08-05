@@ -71,6 +71,10 @@ IQRANIX PREMIUM HERO
 
 .heroLeft{
 
+flex:1;
+
+}
+
     width:55%;
 
 }
@@ -154,15 +158,15 @@ IQRANIX PREMIUM HERO
 PRAYER RING
 =========================================*/
 
-.hero-right{
+.heroRight{
 
 display:flex;
-
-flex-direction:column;
 
 align-items:center;
 
 justify-content:center;
+
+flex:1;
 
 }
 
