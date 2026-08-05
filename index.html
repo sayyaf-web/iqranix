@@ -72,99 +72,73 @@
     </header>
 
     <!-- Prayer Hero -->
-<section class="hero">
+.heroRight{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+flex:1;
+}
 
-    <div class="heroBackground"></div>
+.prayerRing{
+position:relative;
+width:180px;
+height:180px;
+}
 
-    <div class="heroOverlay">
+.prayerRing svg{
+width:180px;
+height:180px;
+transform:rotate(-90deg);
+}
 
-        <div class="heroLeft">
+.ringTrack{
+fill:none;
+stroke:rgba(255,255,255,.18);
+stroke-width:12;
+}
 
-            <span class="heroBadge">
+.ringProgress{
+fill:none;
+stroke:#FFD369;
+stroke-width:12;
+stroke-linecap:round;
+stroke-dasharray:628;
+stroke-dashoffset:628;
+transition:.8s;
+filter:drop-shadow(0 0 10px rgba(255,211,105,.6));
+}
 
-                🕌 Next Prayer
+.ringCenter{
+position:absolute;
+inset:0;
+display:flex;
+align-items:center;
+justify-content:center;
+}
 
-            </span>
+.ringCenter span{
+color:#fff;
+font-size:28px;
+font-weight:700;
+}
 
-            <h1 id="nextPrayer">
+.heroInfo{
+margin-top:20px;
+text-align:center;
+color:white;
+}
 
-                Fajr
+.heroInfo h3{
+margin:0;
+font-size:1rem;
+color:#FFD369;
+}
 
-            </h1>
-
-            <h2 id="countdown">
-
-                00:00:00
-
-            </h2>
-
-            <p id="remainingText">
-
-                3h 45m Remaining
-
-            </p>
-
-            <button class="heroButton">
-
-                View Prayer Times
-
-            </button>
-
-        </div>
-
-        <div class="heroRight">
-
-            <div class="prayerRing">
-
-                <svg viewBox="0 0 240 240">
-
-                    <circle
-                        class="ringTrack"
-                        cx="120"
-                        cy="120"
-                        r="100"/>
-
-                    <circle
-                        class="ringProgress"
-                        cx="120"
-                        cy="120"
-                        r="100"/>
-
-                </svg>
-
-                <div class="ringCenter">
-
-                    <span id="ringPercent">
-
-                        0%
-
-                    </span>
-
-                </div>
-
-            </div>
-
-            <div class="heroInfo">
-
-                <h3 id="hijriDate">
-
-                    12 Muharram 1448 AH
-
-                </h3>
-
-                <p id="location">
-
-                    Detecting Location...
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+.heroInfo p{
+margin-top:6px;
+opacity:.85;
+}
     <!-- Feature Grid -->
     <section class="featureGrid">
 
