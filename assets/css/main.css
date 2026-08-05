@@ -171,11 +171,15 @@ color:white;
 
 .heroLeft{
 
-display:flex;
+    width:55%;
 
-flex-direction:column;
+    display:flex;
 
-justify-content:center;
+    flex-direction:column;
+
+    justify-content:center;
+
+    color:white;
 
 }
 
