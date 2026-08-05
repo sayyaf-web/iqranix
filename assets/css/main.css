@@ -185,9 +185,13 @@ color:white;
 
 .heroLeft h1{
 
-font-size:34px;
+    font-size:52px;
 
-margin:10px 0;
+    color:#ffffff;
+
+    margin:12px 0 8px;
+
+    font-weight:800;
 
 }
 
