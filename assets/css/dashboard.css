@@ -1,1 +1,140 @@
+/*=========================================
+ IQRANIX
+ DASHBOARD
+=========================================*/
 
+/*==============================
+ Dashboard Container
+==============================*/
+
+#dashboard{
+    padding:20px;
+    padding-bottom:120px;
+}
+
+/*==============================
+ Header
+==============================*/
+
+.topHeader{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:24px;
+
+}
+
+.menuBtn{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#ffffff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.greetingSection{
+
+    flex:1;
+
+    margin-left:18px;
+
+}
+
+.greetingSection h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0B8457;
+
+}
+
+.greetingSection p{
+
+    margin-top:4px;
+
+    color:#7a7a7a;
+
+    font-size:14px;
+
+}
+
+.headerRight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.locationBox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    background:#ffffff;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.notificationBtn{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/*==============================
+ Premium Hero
+==============================*/
+
+.hero{
+
+    position:relative;
+
+    height:320px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    margin-bottom:28px;
+
+}
