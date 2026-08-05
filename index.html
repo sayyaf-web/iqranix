@@ -4,167 +4,175 @@
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Iqranix</title>
 
-    <meta name="theme-color"
-          content="#0B8457">
+    <meta name="theme-color" content="#0B8457">
 
-    <link rel="manifest"
-          href="manifest.json">
+    <link rel="manifest" href="manifest.json">
 
-    <link rel="stylesheet"
-          href="assets/css/variables.css">
-
-    <link rel="stylesheet"
-          href="assets/css/main.css">
-
-    <link rel="stylesheet"
-          href="assets/css/dashboard.css">
-
-    <link rel="stylesheet"
-          href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
 <body>
 
-    <main id="dashboard">
+<main id="dashboard">
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="topHeader">
 
         <button class="menuBtn">☰</button>
 
         <div class="greetingSection">
-
             <h2 id="greeting">Assalamu Alaikum</h2>
-
             <p id="greetingMessage">
                 Your Daily Islamic Companion
             </p>
-
         </div>
 
         <div class="headerRight">
 
             <div class="locationBox">
-
                 <span>📍</span>
-
-                <span id="location">
+                <span id="currentLocation">
                     Detecting...
                 </span>
-
             </div>
 
             <button class="notificationBtn">
-
                 🔔
-
             </button>
 
         </div>
 
     </header>
-<section class="hero">
 
-    <div class="heroBackground"></div>
+    <!-- HERO -->
+    <section class="hero">
 
-    <div class="heroOverlay">
+        <div class="heroBackground"></div>
 
-        <div class="heroLeft">
+        <div class="heroOverlay">
 
-            <span class="heroBadge">
-                🕌 Next Prayer
-            </span>
+            <!-- LEFT -->
+            <div class="heroLeft">
 
-            <h1 id="nextPrayer">Fajr</h1>
+                <span class="heroBadge">
+                    🕌 Next Prayer
+                </span>
 
-            <h2 id="countdown">00:00:00</h2>
+                <h1 id="nextPrayer">
+                    Fajr
+                </h1>
 
-            <p id="remainingText">3h 45m Remaining</p>
+                <h2 id="countdown">
+                    00:00:00
+                </h2>
 
-            <button class="heroButton" id="viewPrayerBtn">
-                View Prayer Times
-            </button>
+                <p id="remainingText">
+                    3h 45m Remaining
+                </p>
 
-        </div>
+                <button
+                    class="heroButton"
+                    id="viewPrayerBtn">
 
-        <div class="heroRight">
+                    View Prayer Times
 
-            <div class="prayerRing">
+                </button>
 
-                <svg viewBox="0 0 240 240">
+            </div>
 
-                    <circle class="ringTrack"
-                        cx="120"
-                        cy="120"
-                        r="100"/>
+            <!-- RIGHT -->
+            <div class="heroRight">
 
-                    <circle id="ringProgress"
-                        class="ringProgress"
-                        cx="120"
-                        cy="120"
-                        r="100"/>
+                <div class="prayerRing">
 
-                </svg>
+                    <svg viewBox="0 0 240 240">
 
-                <div class="ringCenter">
+                        <circle
+                            class="ringTrack"
+                            cx="120"
+                            cy="120"
+                            r="100"></circle>
 
-                    <span id="ringPercent">0%</span>
+                        <circle
+                            id="ringProgress"
+                            class="ringProgress"
+                            cx="120"
+                            cy="120"
+                            r="100"></circle>
+
+                    </svg>
+
+                    <div class="ringCenter">
+                        <span id="ringPercent">0%</span>
+                    </div>
+
+                </div>
+
+                <div class="heroInfo">
+
+                    <h3 id="hijriDate">
+                        12 Muharram 1448 AH
+                    </h3>
+
+                    <p id="heroLocation">
+                        Detecting Location...
+                    </p>
 
                 </div>
 
             </div>
 
-            <div class="heroInfo">
-
-                <h3 id="hijriDate">
-                    12 Muharram 1448 AH
-                </h3>
-
-                <p id="location">
-                    Detecting Location...
-                </p>
-
-            </div>
-
         </div>
 
-    </div>
+    </section>
 
-</section>
-    <!-- Prayer Hero -->
-
-    <!-- Feature Grid -->
+    <!-- FEATURE GRID -->
     <section class="featureGrid">
 
     </section>
 
-    <!-- Bottom Navigation -->
+    <!-- BOTTOM NAV -->
     <nav class="bottomNav">
 
-        <button>🏠<span>Home</span></button>
+        <button>
+            🏠
+            <span>Home</span>
+        </button>
 
-        <button>📖<span>Quran</span></button>
+        <button>
+            📖
+            <span>Quran</span>
+        </button>
 
-        <button>🕌<span>Prayer</span></button>
+        <button>
+            🕌
+            <span>Prayer</span>
+        </button>
 
-        <button>🧭<span>Qibla</span></button>
+        <button>
+            🧭
+            <span>Qibla</span>
+        </button>
 
-        <button>⚙<span>Settings</span></button>
+        <button>
+            ⚙
+            <span>Settings</span>
+        </button>
 
     </nav>
 
 </main>
 
-    <script type="module"
-            src="assets/js/app.js"></script>
+<script type="module" src="assets/js/app.js"></script>
 <script src="assets/js/dashboard.js"></script>
-</body>
 
+</body>
 </html>
