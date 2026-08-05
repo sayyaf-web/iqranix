@@ -3,17 +3,12 @@
 =========================================*/
 
 body{
-
-background:var(--background);
-
-min-height:100vh;
-
+    background:var(--background);
+    min-height:100vh;
 }
 
 #dashboard{
-
-padding:20px 18px 120px;
-
+    padding:20px 18px 120px;
 }
 
 /*=========================================
@@ -21,478 +16,317 @@ HEADER
 =========================================*/
 
 .topHeader{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-margin-bottom:24px;
-
-gap:16px;
-
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:24px;
+    gap:16px;
 }
 
 .menuBtn{
-
-width:48px;
-
-height:48px;
-
-border:none;
-
-border-radius:50%;
-
-background:var(--surface);
-
-box-shadow:var(--shadow-sm);
-
-font-size:22px;
-
-cursor:pointer;
-
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:var(--surface);
+    box-shadow:var(--shadow-sm);
+    font-size:22px;
+    cursor:pointer;
 }
 
 .greetingSection{
-
-flex:1;
-
+    flex:1;
 }
 
 .greetingSection h2{
-
-font-size:22px;
-
-font-weight:700;
-
-color:var(--primary);
-
+    font-size:22px;
+    font-weight:700;
+    color:var(--primary);
 }
 
 .greetingSection p{
-
-margin-top:4px;
-
-font-size:14px;
-
-color:var(--text-light);
-
+    margin-top:4px;
+    font-size:14px;
+    color:var(--text-light);
 }
 
 .headerRight{
-
-display:flex;
-
-align-items:center;
-
-gap:14px;
-
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
 .locationBox{
-
-display:flex;
-
-align-items:center;
-
-gap:6px;
-
-padding:8px 14px;
-
-border-radius:30px;
-
-background:white;
-
-box-shadow:var(--shadow-sm);
-
-font-size:13px;
-
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:8px 14px;
+    border-radius:30px;
+    background:#fff;
+    box-shadow:var(--shadow-sm);
+    font-size:13px;
 }
 
 .notificationBtn{
-
-width:46px;
-
-height:46px;
-
-border:none;
-
-border-radius:50%;
-
-background:var(--surface);
-
-font-size:20px;
-
-box-shadow:var(--shadow-sm);
-
-cursor:pointer;
-
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:var(--surface);
+    font-size:20px;
+    box-shadow:var(--shadow-sm);
+    cursor:pointer;
 }
 
 /*=========================================
-HERO PLACEHOLDER
+PREMIUM HERO
 =========================================*/
 
 .hero{
     position:relative;
     height:300px;
+    margin-bottom:28px;
     border-radius:30px;
     overflow:hidden;
-    margin-bottom:28px;
     box-shadow:0 18px 45px rgba(0,0,0,.30);
 }
 
-overflow:hidden;
-
-margin-bottom:28px;
-
-position:relative;
-
-box-shadow:var(--shadow);
-
-}
-
-.heroOverlay{
-
-position:absolute;
-
-inset:0;
-
-padding:28px;
-
-display:flex;
-
-justify-content:space-between;
-
-color:white;
-
-}
-
-.heroLeft{
-
-    width:55%;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    color:white;
-
-}
-
-.heroLeft h1{
-
-    font-size:52px;
-
-    color:#ffffff;
-
-    margin:12px 0 8px;
-
-    font-weight:800;
-
-}
-
-.heroLeft h2{
-
-    font-size:40px;
-
-    color:#FFD369;
-
-    font-weight:700;
-
-    margin-bottom:10px;
-
-}
-.heroLeft p{
-
-    color:white;
-
-    opacity:.9;
-
-    font-size:18px;
-
-    margin-top:8px;
-
-}
-.heroButton{
-
-    margin-top:22px;
-
-    width:220px;
-
-    padding:15px 20px;
-
-    border:none;
-
-    border-radius:40px;
-
-    background:#FFD369;
-
-    color:#0B5137;
-
-    font-size:17px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:all .3s ease;
-
-    box-shadow:
-    0 10px 25px rgba(255,211,105,.35);
-
-}
-
-.heroRight{
-
-text-align:right;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-}
 .heroBackground{
     position:absolute;
     inset:0;
-
     background-image:url("../images/hero-bg.jpg");
-
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
     transform:scale(1.05);
 }
 
 .heroOverlay{
     position:absolute;
     inset:0;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:28px;
-
-    background:
-    linear-gradient(
-        rgba(8,28,21,.70),
+    background:linear-gradient(
+        rgba(8,28,21,.72),
         rgba(8,28,21,.45)
     );
-
     z-index:2;
 }
 
+.heroLeft{
+    width:55%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:#fff;
+}
 
 .heroBadge{
-
     display:inline-block;
-
     width:max-content;
-
     padding:10px 18px;
-
     border-radius:40px;
-
-    background:rgba(255,255,255,.16);
-
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(8px);
     color:#FFD369;
-
     font-size:15px;
-
     font-weight:700;
-
     margin-bottom:18px;
-
-    backdrop-filter:blur(10px);
-
 }
+
+.heroLeft h1{
+    font-size:52px;
+    color:#fff;
+    margin:12px 0 8px;
+    font-weight:800;
+}
+
+.heroLeft h2{
+    font-size:40px;
+    color:#FFD369;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.heroLeft p{
+    font-size:18px;
+    color:#fff;
+    opacity:.9;
+    margin-top:8px;
+}
+
+.heroButton{
+    margin-top:22px;
+    width:220px;
+    padding:15px 20px;
+    border:none;
+    border-radius:40px;
+    background:#FFD369;
+    color:#0B5137;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(255,211,105,.35);
+}
+
+.heroButton:hover{
+    transform:translateY(-3px);
+}
+
+.heroRight{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+}
+
+/*=========================================
+PRAYER RING
+=========================================*/
+
+.prayerRing{
+    position:relative;
+    width:180px;
+    height:180px;
+}
+
+.prayerRing svg{
+    width:180px;
+    height:180px;
+    transform:rotate(-90deg);
+}
+
+.ringTrack{
+    fill:none;
+    stroke:rgba(255,255,255,.25);
+    stroke-width:12;
+}
+
+.ringProgress{
+    fill:none;
+    stroke:#FFD369;
+    stroke-width:12;
+    stroke-linecap:round;
+    stroke-dasharray:628;
+    stroke-dashoffset:628;
+    transition:stroke-dashoffset .8s ease;
+}
+
+.ringCenter{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.ringCenter span{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+.heroInfo{
+    margin-top:20px;
+    text-align:center;
+}
+
+.heroInfo h3{
+    color:#FFD369;
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.heroInfo p{
+    color:#fff;
+    opacity:.9;
+}
+
 /*=========================================
 FEATURE GRID
 =========================================*/
 
 .featureGrid{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:16px;
-
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
 }
 
 .featureCard{
-
-background:white;
-
-border-radius:22px;
-
-padding:18px;
-
-box-shadow:var(--shadow-sm);
-
-transition:.3s;
-
-cursor:pointer;
-
-position:relative;
-
-overflow:hidden;
-
+    background:#fff;
+    border-radius:22px;
+    padding:18px;
+    box-shadow:var(--shadow-sm);
+    transition:.3s;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
 }
 
 .featureCard:hover{
-
-transform:translateY(-6px);
-
-box-shadow:var(--shadow);
-
+    transform:translateY(-6px);
+    box-shadow:var(--shadow);
 }
 
 .featureIcon{
-
-font-size:34px;
-
-margin-bottom:14px;
-
+    font-size:34px;
+    margin-bottom:14px;
 }
 
 .featureCard h3{
-
-font-size:17px;
-
-margin-bottom:6px;
-
+    font-size:17px;
+    margin-bottom:6px;
 }
 
 .featureCard p{
-
-font-size:13px;
-
-color:var(--text-light);
-
+    font-size:13px;
+    color:var(--text-light);
 }
 
 .featureArrow{
-
-position:absolute;
-
-right:18px;
-
-bottom:18px;
-
-border:none;
-
-background:none;
-
-font-size:20px;
-
-color:var(--primary);
-
-cursor:pointer;
-
+    position:absolute;
+    right:18px;
+    bottom:18px;
+    border:none;
+    background:none;
+    font-size:20px;
+    color:var(--primary);
+    cursor:pointer;
 }
 
 /*=========================================
-BOTTOM NAV
+BOTTOM NAVIGATION
 =========================================*/
 
 .bottomNav{
-
-position:fixed;
-
-left:0;
-
-right:0;
-
-bottom:0;
-
-height:82px;
-
-background:white;
-
-display:flex;
-
-justify-content:space-around;
-
-align-items:center;
-
-box-shadow:0 -6px 18px rgba(0,0,0,.08);
-
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    height:82px;
+    background:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0 -6px 18px rgba(0,0,0,.08);
 }
 
 .bottomNav button{
-
-background:none;
-
-border:none;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:6px;
-
-font-size:22px;
-
-cursor:pointer;
-
-color:var(--primary);
-
+    background:none;
+    border:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    font-size:22px;
+    cursor:pointer;
+    color:var(--primary);
 }
 
 .bottomNav span{
-
-font-size:12px;
-
-}
-.prayerRing{
-position:relative;
-width:180px;
-height:180px;
-}
-
-.prayerRing svg{
-width:180px;
-height:180px;
-transform:rotate(-90deg);
-}
-
-.ringTrack{
-fill:none;
-stroke:rgba(255,255,255,.25);
-stroke-width:12;
-}
-
-.ringProgress{
-fill:none;
-stroke:#FFD369;
-stroke-width:12;
-stroke-linecap:round;
-stroke-dasharray:628;
-stroke-dashoffset:628;
-}
-
-.ringCenter{
-position:absolute;
-inset:0;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.ringCenter span{
-color:#fff;
-font-size:28px;
-font-weight:700;
+    font-size:12px;
 }
